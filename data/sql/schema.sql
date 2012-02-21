@@ -1,0 +1,1 @@
+CREATE TABLE tian_post (id BIGINT AUTO_INCREMENT, type TEXT, content TEXT, release_date TEXT, position BIGINT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;

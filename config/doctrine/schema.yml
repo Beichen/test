@@ -1,0 +1,7 @@
+TianPost: 
+  actAs: { Timestampable: ~ }
+  columns:
+    type: { type: string} 
+    content: { type: string} 
+    release_date: { type: string} 
+    position: { type: integer}
