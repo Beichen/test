@@ -1,5 +1,5 @@
-<h1>Tian posts List</h1>
-<h2> Posts</h2>
+<h1 id='title'>Tian posts List</h1>
+<h2 > Posts</h2>
 <?php
 	// $post = array(p, p, p)
 	foreach($posts as $post){

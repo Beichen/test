@@ -1,0 +1,13 @@
+body{
+	background-color: pink;
+}
+
+#title{
+	text-align:center;
+	background-color: yellow;	
+}
+
+.post{
+	width: %80;
+	background-color: red;
+}

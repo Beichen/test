@@ -18,18 +18,23 @@
 
 
 TianPost:
-  p1:
+  # p1:
+    # type: video
+    # content: testlink1
+    # release_date: '2012-2-21'
+    # position: 1
+<?php $j=0; ?>
+<?php for ( $i = 0; $i <= 30; $i++ ): ?>
+  p<?php echo $i; ?>:
     type: video
-    content: testlink1
-    release_date: '2012-2-21'
-    position: 1
-  p2:
-    type: video
-    content: testlink2
-    release_date: '2012-2-21'
-    position: 2
-  p3:
-    type: video
-    content: testlink3
-    release_date: '2012-2-22'
-    position: 3
+    content: testlink<?php echo $i. "\n" ?>
+<?php 
+  if($i%5 == 0 && $i!=0){
+    $j++;
+  } //if(every 5)
+  $date_time=time()+$j*(3600*24);
+?>
+    # release_date: <?php echo $j."\n"; ?>
+    release_date: '<?php echo date('Y-n-j', $date_time);?>'
+    position: <?php echo ($i-$j*5+1)."\n";?>
+<?php endfor; ?>
