@@ -17,18 +17,44 @@ class postsActions extends sfActions
 	
 	// $date = time();
 	// exit();
-	$now_str = date('Y-n-j');
-	// exit($now_str);
-	$query = TianPostTable::getInstance()->createQuery('p')
-				->where('p.release_date=?', $now_str);
 	
-	$posts = $query->execute();
-	$this->posts = $posts;
-	// exit($posts[0]->getContent());
+	/* 
+		建议：
+			-后台：创建：$day 包含所有天（day）的帖子（posts）
+			-前台：创建新的循环，把每一天的帖子全部打印
+		数组的语法：
+			$day = array();
+			$day[] = 'e1';
+			$day[] = 'e2';
+			$day[] = 'e3';
+		循环的语法：
+			for($i=0;$i<$m;$i++){
+				//代码
+			}
+	*/
+	// exit(print_r($day));
+	// func：定义日期字符串
+	//$today_str = date('Y-n-j');
+	//$tomo_str = date('Y-n-j', time()+3600*24);
+
+	// func: 根据日期字符串，从数据库（model）得到帖子
+	//$today_posts = TianPostTable::getInstance()->getByDate($today_str);
+	//$tomo_posts = TianPostTable::getInstance()->getByDate($tomo_str);
 	
-	// $date = DateTime::createFromFormat('j-M-Y', );	//j就是不加0的d
-	// echo $date->format('Y-m-d');
+	// func:把后台变量传到前台（indexSuccess.php)
+	// $this->today_posts = $today_posts;
+	// $this->tomo_posts = $tomo_posts;
+	// $this->day = $day;
 	
+	$day = array();
+	for($i=0;$i<5;$i++)
+	{
+		$date_str = date('Y-n-j', time()+3600*24*$i);
+		$posts = TianPostTable::getInstance()->getByDate($date_str);
+		$day[] = $posts;
+	}
+	
+	$this->day = $day;
   } //executeIndex()
 
   public function executeNew(sfWebRequest $request)

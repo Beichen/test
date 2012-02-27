@@ -1,13 +1,31 @@
-body{
-	background-color: pink;
+body {
+    background-color: #123456;
+    width: 714px;
+    margin: 0 auto;
 }
-
-#title{
-	text-align:center;
-	background-color: yellow;	
+#title {
+    background-color: #CC1111;
+    text-align: center;
 }
-
-.post{
-	width: %80;
-	background-color: red;
+.post {
+    background-color: #BBBB11;
+    border: 1px double #EEEE22;
+    margin: 1px;
+    padding: 1px;
+}
+h2 {
+    background-color: #FFFFFF;
+    text-align: left;
+}
+.type{
+	background-color: #FFEE11;
+	
+}
+.content{
+	background-color: #FFEE33;
+}
+.day{
+	background-color: #FFBBBF;
+	margin: 1px;
+    padding: 1px;
 }
