@@ -400,3 +400,98 @@ Feb 27 16:55:26 symfony [info] {sfWebDebugLogger} Action "posts/index" 483.86 ms
 Feb 27 16:55:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (6)
 Feb 27 16:55:26 symfony [info] {sfWebDebugLogger} View "Success" for "posts/index" 263.99 ms (1)
 Feb 27 16:55:27 symfony [info] {sfWebResponse} Send content (42944 o)
+Feb 29 14:46:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'posts',  'action' => 'index',)
+Feb 29 14:46:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:46:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:46:32 symfony [info] {postsActions} Call "postsActions->executeIndex()"
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-2-29)
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-1)
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-2)
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-3)
+Feb 29 14:46:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-4)
+Feb 29 14:46:33 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\modules/posts/templates/indexSuccess.php"
+Feb 29 14:47:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'posts',  'action' => 'index',)
+Feb 29 14:47:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:47:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:47:16 symfony [info] {postsActions} Call "postsActions->executeIndex()"
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-2-29)
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-1)
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-2)
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-3)
+Feb 29 14:47:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-4)
+Feb 29 14:47:17 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\modules/posts/templates/indexSuccess.php"
+Feb 29 14:47:17 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:17 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:47:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:47:17 symfony [info] {sfWebDebugLogger} Configuration 89.15 ms (9)
+Feb 29 14:47:17 symfony [info] {sfWebDebugLogger} Factories 366.09 ms (1)
+Feb 29 14:47:17 symfony [info] {sfWebDebugLogger} Action "posts/index" 510.36 ms (1)
+Feb 29 14:47:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (6)
+Feb 29 14:47:17 symfony [info] {sfWebDebugLogger} View "Success" for "posts/index" 269.71 ms (1)
+Feb 29 14:47:18 symfony [info] {sfWebResponse} Send content (42861 o)
+Feb 29 14:47:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'posts',  'action' => 'index',)
+Feb 29 14:47:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:47:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:47:28 symfony [info] {postsActions} Call "postsActions->executeIndex()"
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-2-29)
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-1)
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-2)
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-3)
+Feb 29 14:47:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-4)
+Feb 29 14:47:28 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\modules/posts/templates/indexSuccess.php"
+Feb 29 14:47:29 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:29 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:47:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:47:29 symfony [info] {sfWebDebugLogger} Configuration 138.59 ms (9)
+Feb 29 14:47:29 symfony [info] {sfWebDebugLogger} Factories 469.41 ms (1)
+Feb 29 14:47:29 symfony [info] {sfWebDebugLogger} Action "posts/index" 614.86 ms (1)
+Feb 29 14:47:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.20 ms (6)
+Feb 29 14:47:29 symfony [info] {sfWebDebugLogger} View "Success" for "posts/index" 317.57 ms (1)
+Feb 29 14:47:29 symfony [info] {sfWebResponse} Send content (42862 o)
+Feb 29 14:47:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'posts',  'action' => 'index',)
+Feb 29 14:47:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:47:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:47:35 symfony [info] {postsActions} Call "postsActions->executeIndex()"
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-2-29)
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-1)
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-2)
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-3)
+Feb 29 14:47:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-4)
+Feb 29 14:47:35 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\modules/posts/templates/indexSuccess.php"
+Feb 29 14:47:36 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:36 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:47:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:47:36 symfony [info] {sfWebDebugLogger} Configuration 138.44 ms (9)
+Feb 29 14:47:36 symfony [info] {sfWebDebugLogger} Factories 371.30 ms (1)
+Feb 29 14:47:36 symfony [info] {sfWebDebugLogger} Action "posts/index" 493.73 ms (1)
+Feb 29 14:47:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.18 ms (6)
+Feb 29 14:47:36 symfony [info] {sfWebDebugLogger} View "Success" for "posts/index" 308.95 ms (1)
+Feb 29 14:47:36 symfony [info] {sfWebResponse} Send content (42862 o)
+Feb 29 14:47:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'posts',  'action' => 'index',)
+Feb 29 14:47:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:47:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:47:44 symfony [info] {postsActions} Call "postsActions->executeIndex()"
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-2-29)
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-1)
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-2)
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-3)
+Feb 29 14:47:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.type AS t__type, t.content AS t__content, t.release_date AS t__release_date, t.position AS t__position, t.created_at AS t__created_at, t.updated_at AS t__updated_at FROM tian_post t WHERE (t.release_date = ?) - (2012-3-4)
+Feb 29 14:47:45 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\modules/posts/templates/indexSuccess.php"
+Feb 29 14:47:45 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:45 symfony [info] {sfPHPView} Render "C:\wamp\www\TianTian_Test\apps\frontend\templates/layout.php"
+Feb 29 14:47:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:47:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:47:45 symfony [info] {sfWebDebugLogger} Configuration 108.11 ms (9)
+Feb 29 14:47:45 symfony [info] {sfWebDebugLogger} Factories 333.43 ms (1)
+Feb 29 14:47:45 symfony [info] {sfWebDebugLogger} Action "posts/index" 565.83 ms (1)
+Feb 29 14:47:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.19 ms (6)
+Feb 29 14:47:45 symfony [info] {sfWebDebugLogger} View "Success" for "posts/index" 361.40 ms (1)
+Feb 29 14:47:45 symfony [info] {sfWebResponse} Send content (42862 o)

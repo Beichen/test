@@ -52,8 +52,9 @@ class postsActions extends sfActions
 		$date_str = date('Y-n-j', time()+3600*24*$i);
 		$posts = TianPostTable::getInstance()->getByDate($date_str);
 		$day[] = $posts;
+		// exit($posts[0]->getContent());
 	}
-	
+	// exit('count:'.count($day));
 	$this->day = $day;
   } //executeIndex()
 
