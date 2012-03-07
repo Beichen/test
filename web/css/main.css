@@ -25,7 +25,8 @@ h2 {
 }
 .type{
 	background-color: #2F5173;
-	
+	font:italic normal bold 12pt arial;
+	color: #FFFFFF;
 }
 .content{
 	background-color: #2F5173;
@@ -33,8 +34,24 @@ h2 {
 .day{
 	background-color: #2F5173; 
 	margin: 32px 0px;
-    padding: 15px;
+    padding: 5px 50px 32px 36px;
 	position:relative;
+	
+	-moz-border-radius: 1em;
+    /* -webkit-border-radius: 1em; */
+	/*border-radius: 1em; */
+	
+	/* width:120px;   */
+    /* height:120px;  */ 
+    border:1px solid #ccc;  
+    /* background:#fff;  */ 
+    /* font-size:12px;  */ 
+    /* padding:10px;   */
+    -moz-box-shadow:3px 3px 4px #ccc;  
+    -webkit-box-shadow:3px 3px 4px #ccc;  
+    box-shadow:3px 3px 4px #ccc;  
+    *filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color="#cccccc");  
+
 }
 .release_marker{
 	position:absolute; 
@@ -43,5 +60,22 @@ h2 {
 	display: inline;
 	background-color: red;
 	padding: 2px 10px;
-	
+
+	/* -moz-border-radius: 10em; */
+    /* -webkit-border-radius: 1em; */
+    /* border-radius: 1em; */
 }
+
+a:link { color: #F00; } /*链接颜色*/
+a:visited { color: #FFAF2F; } /* 访问过后颜色 */
+a:active { color: #F0F; } /* 链接激活颜色 */
+a:hover { color: #FFCF5F; text-decoration: underline; } /* 鼠标悬停 */
+a{ font:italic normal bold 11pt arial; }
+
+
+1.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{}{}
+.b1,.b8{}{margin:0 5px;}
+.b2,.b7{}{margin:0 3px;border-right:2px solid; border-left:2px solid;}
+.b3,.b6{}{margin:0 2px;border-right:1px solid; border-left:1px solid;}
+.b4,.b5{}{margin:0 1px;border-right:1px solid; border-left:1px solid; height:2px;}
+

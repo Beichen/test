@@ -1,10 +1,17 @@
-<h1 id='title'>TianTian</h1>
+ï»¿<h1 id='title'>TianTian</h1>
 <Body>
 	<?php
 		foreach($day as $posts){ 
 			//func: Ñ­»·ËùÓÐÌìµÄÌû×Ó£¨posts£©
 			$output = "<div class='day' >";
-			$output .= "<div class='release_marker'>".$posts[0]->getReleaseDate()."</div>";
+			// exit($posts[0]->getReleaseDate());
+			$str = $posts[0]->getReleaseDate();
+			$date = date_create_from_format('Y-n-j', $str);
+			//date('Y-n-j', $date_time)
+			// exit(date_format($date, 'Y-m-d'));
+			// exit(date_format('Y-n-j', $date_time));
+			$string = date_format($date, 'Y').'å¹´'.date_format($date, 'n').'æœˆ'.date_format($date, 'j').'æ—¥';
+			$output .= "<div class='release_marker'>".$string."</div>";
 			//foreach() 5
 			// $post = array(p, p, p)
 			foreach($posts as $post){
