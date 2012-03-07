@@ -15,8 +15,12 @@ class postsActions extends sfActions
 	// exit('here');
     $this->test = 'hellow LYC';
 	exit('here');
+<<<<<<< HEAD
 	//thi' test1
 	
+=======
+	
+>>>>>>> test2
 	// $date = time();
 	// exit();
 	
